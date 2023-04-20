@@ -6,7 +6,8 @@ import Shop from './Pages/Shop';
 import Cart from './Pages/CartPage';
 import Footer from './Components/Footer';
 import LoginScreen from './Pages/LoginScreen';
-import LoginForm from './Pages/LoginForm';
+import ResetPassword from './Pages/ResetPassword';
+import UserAccount from './Pages/UserAccount';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/LoginScreen" element={<LoginScreen/>} />
-          <Route path="/loginForm" element={<LoginForm/>} />
+          <Route path="/resetPassword" element={<ResetPassword/>} />
+          <Route path="/userAccount" element={<UserAccount/>} />
       </Routes>
       </main>
       <Footer/>

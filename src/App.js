@@ -8,6 +8,8 @@ import Footer from './Components/Footer';
 import LoginScreen from './Pages/LoginScreen';
 import ResetPassword from './Pages/ResetPassword';
 import UserAccount from './Pages/UserAccount';
+import { CRUDExample } from './Components/CRUDExample';
+import AdminForm from './Pages/AdminForm';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/LoginScreen" element={<LoginScreen/>} />
           <Route path="/resetPassword" element={<ResetPassword/>} />
           <Route path="/userAccount" element={<UserAccount/>} />
+          <Route path="/crudExample" element={<CRUDExample/>} />
+          <Route path="/adminForm" element={<AdminForm/>} />
       </Routes>
       </main>
       <Footer/>

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Logout from './Logout';
 import { auth } from '../firebase';
 import LoginRead from './LoginRead';
-import UserAccount from './UserAccount';
 
 function Home() {
   const [user, setUser] = useState(null);
@@ -24,7 +23,6 @@ function Home() {
       <h1>Bem-vindo(a) à nossa loja virtual</h1>
       <p>Confira nossos produtos incríveis na página de <Link to="/shop">loja</Link>.</p>
       {user ? <Logout /> : <LoginRead />}
-      {user ? <UserAccount /> : <LoginRead />}
       {<p> Ainda não tem uma conta? então faça o seu <Link to='/loginScreen'>Login</Link> </p>}
     </div>
   );
